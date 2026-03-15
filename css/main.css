@@ -2,6 +2,7 @@ body{
     margin:0;
     font-family:'Poppins', sans-serif;
     color: white; 
+    font-size: 16pt;
 }
 h1{ 
     font-size: 40pt;
@@ -14,10 +15,11 @@ h4{
     font
 }
 
+
+
 @font-face {
     font-family: "TitleFont";
-    src: url("../assets/fonts/Mythology\ Of\ Egypt.ttf");
-    
+    src: url(../assets/fonts/mythology_of_egypt/Mythology\ Of\ Egypt.otf);
 }
 .TitleFont{
     font-family: "TitleFont";
@@ -26,12 +28,12 @@ h4{
 }
 
  .metamorphous-heading{ 
-    font-family: 'metamorphous';
+    font-family: 'metamorphous' ;
      font-size: 40px;
      color:#ffff;
  }
  .metamorphous-tagline{ 
-    font-family: 'metamorphous', cursive;
+    font-family: 'metamorphous';
      font-size: 24px;
      color:#ffff ;
  }
@@ -40,7 +42,7 @@ h4{
 
 .bg-image{
     background-image:url(../assets/img/homeHeader.png);
-    height:1000px;
+    height:980px;
     background-position:center;
     background-repeat:no-repeat;
     background-size:cover;
@@ -49,50 +51,43 @@ h4{
 
 /* navigation bar container */
 
-.container{
-    width:100%;
-    padding-top:30px;
-    display:flex;
-    justify-content:center;
+.nav-container{
+    padding: 30px 100px;
 }
 
 /* navigation bar itself */
 
 .nav{
-    width:90%;
-    height:70px;
-    background-color:rgba(255,255,255,0.6);
-    border-radius:35px;
-
+    background-color:rgba(255,255,255,0.8);
+    justify-content: center;
+    
+    
+    border-radius: 25px;
     display:flex;
     align-items:center;
     justify-content:space-between;
+    flex-direction: row;
 
-    padding:0 25px;
-    box-sizing:border-box;
-}
-
-/* logo image  */
-
-.logo{
-    height:60px;
+    
 }
 
 /* navigation links */
 
 .nav-links{
     display:flex;
-    gap:30px;
+    gap:40px;
 }
 
 .nav-links a{
     text-decoration:none;
-    color:#333;
-    font-size:17px;
+    color:#8b8b8b;
+    font-size:16px;
+    font-style: bold ;
 }
 
 .nav-links a:hover{
-    color: #15d5f5 ;
+    color: #15d5f5 ; 
+    font-weight: 500;
 }
 
 /* search bar */
@@ -104,16 +99,16 @@ h4{
     align-items:center;
 
     padding:var(--padding);
-    border-radius:28px;
-
-    background:#f6f6f6;
+    border-radius:10px;
+    margin-right:  40px;
+    background: white;
 }
 
 .search-input{
     font-size:16px;
-    font-family:'Lexend',sans-serif;
+    font-family:'Poppins' , sans-serif;
 
-    color:#333;
+    color:black;
     margin-left:var(--padding);
 
     outline:none;
@@ -122,11 +117,21 @@ h4{
 
     width:200px;
 }
-
-.search-input::placeholder{
-    color:rgba(0,0,0,0.25);
+.search-icon{
+    color: #8b8b8b;
+    margin-left: 10px;
 }
 
+
+.search-input::placeholder{
+    color:black;
+}
+
+.logo{
+    height:auto;
+    width: 300px;
+    margin-left: 40px;
+}
 .hero-image-text{ 
     display: flex;
     flex-direction: column;
@@ -139,42 +144,130 @@ h4{
     
 }
 
+
+
+
+
+
 .section-2-background{
     background-color: #002d68;
-
+    background-size: cover;
+    height: 980px;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 120px;
-    padding: 120px 80px;
+    justify-content: space-evenly;
+   
 }
-.carousel-slide{ 
-    width: auto;
-    border-radius: 20px;
+
+.carousel-inner{
+    top: 80px;
+    height: 800px;
+    width: 800px;
 }
-.carouselExample{ 
-    width: 1400px;
-    padding: 100px;
-    margin: 0px;
-    left: -100px
 
-
+.carousel-control-next{
+    font-weight: 1000;
 }
 .section-2-text{
-    margin:0 ;
-    padding: 200px;
+    padding: 10px 50px;
+    margin: 10px;
+    height: 700px;
+    width: 700px;
+    margin-top: 200px;
+    flex-wrap: wrap;
+    font-size: 16pt;
     
-
-
 }
 
 .cta-button{ 
-    padding: 400px,
-    margin-top: 50px;
-    width: 250px;
-    height: 60px;
+    margin:auto;
+    margin-top: 40px;
+    padding: 20px 80px;
+    box-shadow: none;
+    align-items: center:
+
+    width: 400px;
+    height: 80px;
+
     background: #15d5f5;
+
     border-radius: 10px;
     color: white;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 800;
+
+}
+
+
+.section-3-background{ 
+    background-color: #ffff ;
+    height:max-content;
+    width: max-content;
+
+}
+ .container3{ 
+     display: flex;
+     justify-content:space-around;
+    
+    
+}
+.homeImg1{ 
+    padding: 100px 90px;
+    height: 800px;
+    width: ;
+    top: 200px;
+
+
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content:
+   align-items: center;
+    
+}
+.section3Heading{
+    color: #30004f;
+    font-weight:600
+}
+.section3-text{ 
+    text-size-adjust: 16pt;
+    color: #8b8b8b;
+    display: block;
+    padding: 80px;
+    text-wrap-mode:left;
+}
+
+
+
+
+.section4-background{
+    background-color: #002d68;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 980px;
+}
+
+.section-4-text{
+    align-content: center;
+    justify-self: center;
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
+.card-body{
+    color:white;
+justify-content: center;
+}
+
+.cards{
+    background-color:transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center
+}
+
+
+.card-img-top{
+    background-color: transparent;
+    border-radius:25px;
+
 }
