@@ -6,13 +6,13 @@ body{
 }
 h1{ 
     font-size: 40pt;
-    font-style: bold;
+    font-weight: bold;
 }
 h3{ 
     font-size: 18pt
 }
 h4{ 
-    font
+    font-size: 16px
 }
 
 
@@ -38,7 +38,6 @@ h4{
      color:#ffff ;
  }
 
-/* hero background image styling */
 
 .bg-image{
     background-image:url(../assets/img/homeHeader.png);
@@ -49,29 +48,33 @@ h4{
     position:relative;
 }
 
-/* navigation bar container */
 
 .nav-container{
-    padding: 30px 100px;
+    display:flex;
+    justify-content: center;
 }
 
-/* navigation bar itself */
 
 .nav{
+    width: 90%;
+    max-width: 2000px;
+    margin: 15px;
+
+
+
     background-color:rgba(255,255,255,0.8);
-    justify-content: center;
-    
-    
     border-radius: 25px;
+
+
     display:flex;
     align-items:center;
     justify-content:space-between;
     flex-direction: row;
 
     
+    
 }
 
-/* navigation links */
 
 .nav-links{
     display:flex;
@@ -82,7 +85,7 @@ h4{
     text-decoration:none;
     color:#8b8b8b;
     font-size:16px;
-    font-style: bold ;
+    
 }
 
 .nav-links a:hover{
@@ -90,7 +93,6 @@ h4{
     font-weight: 500;
 }
 
-/* search bar */
 
 .search{
     --padding:10px;
@@ -128,8 +130,8 @@ h4{
 }
 
 .logo{
-    height:auto;
-    width: 300px;
+    height:100px;
+    width: 200px;
     margin-left: 40px;
 }
 .hero-image-text{ 
@@ -322,9 +324,6 @@ h4{
 }
 
 
-.middleFooter{
-    
-}
 
 
 .footer{
@@ -351,6 +350,7 @@ align-content: right;
 gap: 12px;
 
 
+
 }
 
 
@@ -363,7 +363,17 @@ gap: 12px;
     flex:1;
 }
 
-
+.middleFooter{
+    display: flex;
+    flex-direction: column;
+    
+}
+.middleFooter a{ 
+     text-decoration:none;
+    color:#8b8b8b;
+    font-size:16px;
+    font-style: bold ;
+}
 .socialMediaIcons{
     display:flex;
     gap:15px;
@@ -410,7 +420,7 @@ gap: 12px;
 
 .footerLinks{
     margin:12px;
-    color: #ddd;
+    color: #333;
 }
 
 
@@ -422,35 +432,3 @@ gap: 12px;
 
 
 
-.navbar {
-  background-color: white;
-  padding: 15px 40px;
-  border-bottom: 1px solid #eee;
-}
-
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* Logo */
-.logo {
-  height: 40px;
-}
-
-/* Links */
-.nav-links {
-  display: flex;
-  gap: 30px;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-}
-
-.nav-links a:hover {
-  color: #000;
-}
