@@ -39,13 +39,14 @@ h4{
  }
 
 
-.bg-image{
-    background-image:url(../assets/img/homeHeader.png);
+.bg-image1{
+   background-image: url("../assets/img/homeHeader.png");
     height:980px;
     background-position:center;
     background-repeat:no-repeat;
     background-size:cover;
     position:relative;
+
 }
 
 
@@ -432,3 +433,33 @@ gap: 12px;
 
 
 
+.adoptHeader{
+    position: relative;
+    height: 400px;
+    
+}
+
+.bg-image2{
+    
+    background-image: url("../assets/img/adoptHeader.png") }
+
+
+.nav-container2{
+    position:relative;
+
+    display: flex;
+    justify-content:center;
+    margin-top: 20px;
+
+}
+
+.adoptHero{
+     position: relative;
+  z-index: 2;
+
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+  padding-left: 100px;
+}
