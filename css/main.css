@@ -561,20 +561,26 @@ gap: 12px;
 
 .blueDragonContainer {
     display: flex;
+    justify-content: space-between;
     gap: 60px;
-    padding: 60px;
+    padding:80px;
+    padding-left:180px;
     background-color: #fff;
+    margin-left:
+    align-items: center;
 }
 
 /* LEFT IMAGE */
 .dragonImageWrapper img {
-    width: 500px;
+    width: 600px;
+    height:auto;
     border-radius: 25px;
 }
 
 /* RIGHT CONTENT */
 .dragonContent {
-    max-width: 600px;
+    width:800px;
+    height:600px;
     display: flex;
     flex-direction: column;
 }
@@ -638,7 +644,7 @@ gap: 12px;
 .actionRow {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 25px;
     margin-bottom: 30px;
 }
 
@@ -655,7 +661,7 @@ gap: 12px;
     background: none;
     border: none;
     color: white;
-    padding: 10px 15px;
+    padding: 20px 20px;
     cursor: pointer;
 }
 
@@ -666,10 +672,10 @@ gap: 12px;
 
 /* CTA BUTTON */
 .ctaButton {
-    background-color: #22b8c7;
+    background-color:#15d5f5;
     color: white;
     border: none;
-    padding: 12px 25px;
+    padding: 20px 60px;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -678,9 +684,16 @@ gap: 12px;
 .detailsGrid {
     display: grid;
     grid-template-columns: auto 20px 1fr;
-    row-gap: 10px;
-    column-gap: 10px;
+    row-gap: 20px;
+    column-gap: 15px;
     color: #888;
     font-size: 14px;
     margin-top: 20px;
+    font-size: 14pt;
+}
+
+.horizontalRule{
+    background-color: #363636;
+    height: 4px;
+    width: 800px;
 }
