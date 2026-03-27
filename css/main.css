@@ -393,12 +393,13 @@ gap: 12px;
     display:flex;
     gap:15px;
     margin-top: 15px;
+    margin-right:500px;
 
 }
 
 .socialMediaIcons img{
-    width:45px;
-    height:45px;
+    width:80px;
+    height:85px;
     border-radius:10px;
 }
 
@@ -724,4 +725,74 @@ gap: 12px;
     display: flex;
     align-items: center;
     margin-left: 700px;
+  
 }
+
+.contactSection{
+    padding: 20px 60px;
+}
+
+.contactContainer{ 
+    display:flex;
+    flex-direction:row;
+    align-items:flex-start;
+    justify-content:center;
+
+}
+
+.contactInfo, .contactForm{
+    width: 30%;
+    padding:px;
+    color: #002d68;
+    border:none;
+    border-radius: 30px;
+    margin:80px;
+
+}
+.contactForm{
+    background-image: url("../assets/img/formBackground.png");
+}
+
+
+
+
+
+.contactForm form{
+    padding:20px;
+    gap:10px;
+    
+    border-radius: 20px;
+}
+
+.formElement{
+    width: 100%;
+    padding: 10px;
+
+}
+
+.contactForm input, 
+.contactForm select,
+ .contactForm textarea{
+    width:95%;
+    padding: 10px 0;
+    padding-left: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Poppins';
+}
+
+.contactForm button{ 
+    width:300px;
+    padding: 20px;
+    background-color: #15d5f5;
+    color: #ffff;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px ;
+    margin:20px;
+    border-radius: 15px;
+}
+
+.formHeading{}
+
+    
